@@ -1,0 +1,163 @@
+Classfile /j:/java-64/jdk1.8/bin/HelloWorldDemo.class
+  Last modified 2018-10-15; size 1149 bytes
+  MD5 checksum 6096f36225e1bb852ac023c4efa13a68
+  Compiled from "HelloWorldDemo.java"
+public class com.jvm.HelloWorldDemo
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #3.#47         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #13.#48        // com/jvm/HelloWorldDemo.i:I
+   #3 = Class              #49            // java/lang/Object
+   #4 = Fieldref           #13.#50        // com/jvm/HelloWorldDemo.obj:Ljava/lang/Object;
+   #5 = Fieldref           #13.#51        // com/jvm/HelloWorldDemo.sss:I
+   #6 = Methodref          #52.#53        // java/lang/System.currentTimeMillis:()J
+   #7 = Methodref          #13.#54        // com/jvm/HelloWorldDemo.methodTwo:()V
+   #8 = Class              #55            // java/io/File
+   #9 = String             #56            //
+  #10 = Methodref          #8.#57         // java/io/File."<init>":(Ljava/lang/String;)V
+  #11 = Methodref          #13.#58        // com/jvm/HelloWorldDemo.methodThree:()V
+  #12 = Fieldref           #13.#59        // com/jvm/HelloWorldDemo.k:I
+  #13 = Class              #60            // com/jvm/HelloWorldDemo
+  #14 = Utf8               i
+  #15 = Utf8               I
+  #16 = Utf8               ConstantValue
+  #17 = Integer            0
+  #18 = Utf8               k
+  #19 = Utf8               obj
+  #20 = Utf8               Ljava/lang/Object;
+  #21 = Utf8               sss
+  #22 = Utf8               <init>
+  #23 = Utf8               ()V
+  #24 = Utf8               Code
+  #25 = Utf8               LineNumberTable
+  #26 = Utf8               LocalVariableTable
+  #27 = Utf8               this
+  #28 = Utf8               Lcom/jvm/HelloWorldDemo;
+  #29 = Utf8               methodOne
+  #30 = Utf8               (I)V
+  #31 = Utf8               j
+  #32 = Utf8               sum
+  #33 = Utf8               acb
+  #34 = Utf8               start
+  #35 = Utf8               J
+  #36 = Utf8               methodTwo
+  #37 = Utf8               file
+  #38 = Utf8               Ljava/io/File;
+  #39 = Utf8               methodThree
+  #40 = Utf8               main
+  #41 = Utf8               ([Ljava/lang/String;)V
+  #42 = Utf8               args
+  #43 = Utf8               [Ljava/lang/String;
+  #44 = Utf8               <clinit>
+  #45 = Utf8               SourceFile
+  #46 = Utf8               HelloWorldDemo.java
+  #47 = NameAndType        #22:#23        // "<init>":()V
+  #48 = NameAndType        #14:#15        // i:I
+  #49 = Utf8               java/lang/Object
+  #50 = NameAndType        #19:#20        // obj:Ljava/lang/Object;
+  #51 = NameAndType        #21:#15        // sss:I
+  #52 = Class              #61            // java/lang/System
+  #53 = NameAndType        #62:#63        // currentTimeMillis:()J
+  #54 = NameAndType        #36:#23        // methodTwo:()V
+  #55 = Utf8               java/io/File
+  #56 = Utf8
+  #57 = NameAndType        #22:#64        // "<init>":(Ljava/lang/String;)V
+  #58 = NameAndType        #39:#23        // methodThree:()V
+  #59 = NameAndType        #18:#15        // k:I
+  #60 = Utf8               com/jvm/HelloWorldDemo
+  #61 = Utf8               java/lang/System
+  #62 = Utf8               currentTimeMillis
+  #63 = Utf8               ()J
+  #64 = Utf8               (Ljava/lang/String;)V
+{
+  public com.jvm.HelloWorldDemo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_0
+         6: putfield      #2                  // Field i:I
+         9: aload_0
+        10: new           #3                  // class java/lang/Object
+        13: dup
+        14: invokespecial #1                  // Method java/lang/Object."<init>":()V
+        17: putfield      #4                  // Field obj:Ljava/lang/Object;
+        20: aload_0
+        21: iconst_0
+        22: putfield      #5                  // Field sss:I
+        25: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 4
+        line 13: 9
+        line 14: 20
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      26     0  this   Lcom/jvm/HelloWorldDemo;
+
+  public void methodOne(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=7, args_size=2
+         0: iconst_0
+         1: istore_2
+         2: iload_1
+         3: iload_2
+         4: iadd
+         5: istore_3
+         6: aload_0
+         7: getfield      #4                  // Field obj:Ljava/lang/Object;
+        10: astore        4
+        12: invokestatic  #6                  // Method java/lang/System.currentTimeMillis:()J
+        15: lstore        5
+        17: aload_0
+        18: invokespecial #7                  // Method methodTwo:()V
+        21: return
+      LineNumberTable:
+        line 18: 0
+        line 19: 2
+        line 20: 6
+        line 21: 12
+        line 22: 17
+        line 23: 21
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      22     0  this   Lcom/jvm/HelloWorldDemo;
+            0      22     1     i   I
+            2      20     2     j   I
+            6      16     3   sum   I
+           12      10     4   acb   Ljava/lang/Object;
+           17       5     5 start   J
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: invokestatic  #11                 // Method methodThree:()V
+         3: return
+      LineNumberTable:
+        line 35: 0
+        line 36: 3
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  args   [Ljava/lang/String;
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #12                 // Field k:I
+         4: return
+      LineNumberTable:
+        line 11: 0
+}
+SourceFile: "HelloWorldDemo.java"
